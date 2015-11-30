@@ -5,12 +5,12 @@ public class Arrive : MonoBehaviour
 {
     public Vector3 targetPosition;
 
-    private Steering steering;
+    private SteeringBasics steering;
     private Vector3 finalPosition;
 
 	void Start ()
     {
-        steering = GetComponent<Steering>();
+        steering = GetComponent<SteeringBasics>();
         finalPosition = new Vector3(targetPosition.x, targetPosition.y, Random.Range(-targetPosition.z, targetPosition.z));
     }
 
