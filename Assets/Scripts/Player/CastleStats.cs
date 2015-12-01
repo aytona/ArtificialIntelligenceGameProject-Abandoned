@@ -33,6 +33,13 @@ public class CastleStats : MonoBehaviour {
             health = (int)upgrade;
             current = upgrade;
         }
+
+        if (health <= 0)
+        {
+            // Need explosion (temp destroy gameobject)
+            Destroy(gameObject, 5f);
+            Application.LoadLevel("EndScene");          // Obselete in 5.3
+        }
     }
 
     private void SetType()
