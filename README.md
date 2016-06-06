@@ -1,4 +1,4 @@
-# ArtificialIntelligenceGameProject-Abandoned
+# GAME3001GameProject-Test
 Unity game project for GAME3001 George Brown College
 
 ## Project Status
